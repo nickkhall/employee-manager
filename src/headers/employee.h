@@ -21,6 +21,10 @@ typedef struct Employee {
   struct Employee* next_employee;
 } Employee;
 
+typedef struct {
+  struct Employee* head;
+} Employees;
+
 Employee* employee_push(Employee* employee, char** data);
 
 Employee* employee_populate(Employee* employee, char** data);
