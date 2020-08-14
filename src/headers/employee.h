@@ -1,5 +1,5 @@
-#ifndef EMPLOYEE_H
-#define EMPLOYEE_H
+#ifndef __EMP_MAN_EMPLOYEE_H__
+#define __EMP_MAN_EMPLOYEE_H__
 
 #include <libpq-fe.h>
 #include <time.h>
