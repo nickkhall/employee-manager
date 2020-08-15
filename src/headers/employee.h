@@ -6,7 +6,7 @@
 
 extern const char* employee_labels_mini[];
 
-typedef struct Employee {
+typedef struct {
   char* id;
   char* first;
   char* last;
@@ -18,12 +18,16 @@ typedef struct Employee {
   char* ethnicity;
   char* title;
   int* salary;
-  struct Employee* next_employee;
-} Employee;
+} employee_t;
 
 typedef struct {
-  struct Employee* head;
-} Employees;
+  struct employee_t*      data;
+  struct employee_list_node_t* next;
+} employee_list_node_t;
+
+typedef struct {
+  struct employee_list_node_t* head;
+} employee_list_t;
 
 Employee* employee_push(Employee* employee, char** data);
 
